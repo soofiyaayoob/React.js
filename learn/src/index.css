@@ -37,3 +37,23 @@
 }.student p{
   margin: 0;
 }
+
+/* userGreetng */
+
+.welcome-message{
+  font-size: 2em;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+}
+.login-prompt{
+  background-color: red;
+  font-size: 2em;
+
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+}
