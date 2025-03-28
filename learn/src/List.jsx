@@ -15,12 +15,12 @@ function List() {
   
     // Filtering
     const lowCalFruits = fruits.filter((fruit) => fruit.calories < 100);
-    const highCalFruits = fruits.filter((fruit) => fruit.calories >= 100); // ✅ Fixed condition
+    const highCalFruits = fruits.filter((fruit) => fruit.calories >= 100); 
   
     // Mapping 
     const fruitList = fruits.map((fruit) => (
       <li key={fruit.id}>
-        {fruit.name}: &nbsp;
+        {fruit.name}: &nb sp;
         {fruit.calories} calories
       </li>
     ));
@@ -49,6 +49,7 @@ function List() {
   
         <h2>High-Calorie Fruits (100 Calories & Above)</h2>
         <ul>{highCalList}</ul>
+        <hr />
       </div>
     );
   }
