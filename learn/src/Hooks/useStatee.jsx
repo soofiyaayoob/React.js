@@ -12,6 +12,7 @@ function Component() {
         <div>
             <p>Name: {name}</p>
             <button onClick={updateName}>Update Name</button> 
+            <hr />
         </div>
     );
 }
