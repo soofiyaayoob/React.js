@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {produce} from "immer";
 function Todolist() {
   const [tasks, setTasks] = useState(["walk", "run", "eat", "take a shower"]);
   const [newTask, setNewtTask] = useState("");
@@ -8,30 +8,39 @@ function Todolist() {
     setNewtTask(event.target.value);
   }
   function AddTask() {
-    if(newTask.trim() !== ""){
-        setTasks(t => [...t, newTask]);
+    if (newTask.trim() !== "") {
+        setTasks(
+          produce((draft) => {
+            draft.push(newTask);
+          })
+        );
         setNewTask("");
-    }
+      }
   }
   function deleteTask(index) {
-    const updatedTasks = tasks.filter((elemets, i) => i !== index);
-    setTasks(updatedTasks);
+    setTasks(
+        produce((draft) => {
+          draft.splice(index, 1);
+        })
+      );
   }
   function moveTaskUp(index) {
-    if(index > 0){
-        const updatedTasks = [...tasks];
-        [updatedTasks[index], updatedTasks[index - 1]] = 
-        [updatedTasks[index - 1], updatedTasks[index]];
-        setTasks(updatedTasks);
-    }
+    if (index > 0) {
+        setTasks(
+          produce((draft) => {
+            [draft[index], draft[index - 1]] = [draft[index - 1], draft[index]];
+          })
+        );
+      }
   }
   function moveTaskDown(index) {
-    if(index < tasks.length - 1){
-        const updatedTasks = [...tasks];
-        [updatedTasks[index], updatedTasks[index + 1]] = 
-        [updatedTasks[index + 1], updatedTasks[index]];
-        setTasks(updatedTasks);
-    }
+    if (index < tasks.length - 1) {
+        setTasks(
+          produce((draft) => {
+            [draft[index], draft[index + 1]] = [draft[index + 1], draft[index]];
+          })
+        );
+      }
   }
   return (
     <>
