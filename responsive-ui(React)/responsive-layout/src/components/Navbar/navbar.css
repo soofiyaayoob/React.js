@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@400&display=swap');
+
 
 .navbar {
-  background-color: #000;
+
   color: white;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 }
 
 .logo {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 600;
   font-size: 40px;
   line-height: 100%;
@@ -25,7 +25,7 @@
 }
 
 .nav-links li {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 20.3px;
@@ -35,47 +35,22 @@
   transition: color 0.3s;
 }
 
-.nav-links li:hover {
-  color: #facc15; /* yellow */
-}
-
-.demo-button {
-  border: 2px solid #facc15;
-  color: #facc15;
-  background: transparent;
-  padding: 8px 16px;
-  border-radius: 9999px;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.demo-button:hover {
-  background-color: #facc15;
-  color: #000;
-}
-.demo-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* ...your other styles */
-}
 
 .demo-icon {
   width: 16px;
   height: 16px;
 }
 .demo-button {
-  border: 2px solid #facc15;
-  color: #facc15;
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFBE0D;
+  color: #FFFFFF;
   background: transparent;
-  padding: 8px 16px;
-  border-radius: 9999px;
   cursor: pointer;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 
-  /* ✅ Font Styling as you requested */
-  font-family: 'Montserrat', sans-serif;
+  
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 23.2px;
@@ -85,9 +60,29 @@
   display: flex;
   align-items: center;
   gap: 8px;
+border-radius: 30px;
+
+  width: 177.67379760742188;
+height: 44;
+
+top: 63px;
+left: 1207.33px;
+
+
+padding-top: 10px;
+padding-right: 21px;
+padding-bottom: 10px;
+padding-left: 21px;
+
+
+
+
+
 }
 
-.demo-button:hover {
-  background-color: #facc15;
-  color: #000;
+
+.demo-button:hover,
+.nav-links li:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }

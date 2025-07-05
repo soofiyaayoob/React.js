@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 
 .hero {
   text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  gap: 24px;              
   padding: 60px 20px;
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff;
+  gap: 22px;
 }
 
 .hero .rating-box {
@@ -14,57 +19,62 @@
   background: #1a1a1a;
   padding: 8px 16px;
   border-radius: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 30px;
 }
-
-.hero .rating-value {
-  color: #fff;
-}
-
+.hero .rating-value,
 .hero .reviews {
-  color: #aaa;
+  color: #A6A6A6;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  
+  letter-spacing: 0;
 }
 
-.hero .heading {
-  font-family: 'Montserrat', sans-serif;
+.hero .headingg {
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 70px;
   line-height: 77.7px;
-  color: #fff;
-  margin: 0 auto 24px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
 }
 
 .hero .subtext {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
   line-height: 23.2px;
-  color: #cfcfcf;
-  margin-bottom: 40px;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .hero .connect-button {
-  background-color: #facc15;
+  background-color: #FFBE0D;
   color: #000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 23.2px;
   border: none;
-  padding: 12px 24px;
-  border-radius: 9999px;
+  padding: 10px 21px;
+  border-radius: 30px;
+  width: 165px;
+  height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+  opacity: 1;
 }
 
 .hero .connect-icon {
   width: 16px;
   height: 17px;
-  vertical-align: middle;
 }

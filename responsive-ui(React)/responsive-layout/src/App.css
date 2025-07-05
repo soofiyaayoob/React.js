@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 .app{
   box-sizing: border-box;
   width: 100%;
@@ -5,4 +7,21 @@
   max-width: 100vw;
   overflow: hidden;
   /* display: flex; */
+  /* background: #000; */
+}
+
+body {
+  background:
+    url('/bgimage0.svg') top center no-repeat,
+    url('/bgimage.svg') bottom center no-repeat,
+    #000; 
+  background-size:
+    contain,
+    contain,
+    auto; 
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position:
+    top center,
+    bottom center;
 }

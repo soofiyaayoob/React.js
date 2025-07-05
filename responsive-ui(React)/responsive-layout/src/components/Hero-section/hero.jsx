@@ -12,7 +12,7 @@ function Hero() {
         <span className="reviews">11 reviews</span>
       </div>
 
-      <h1 className="heading">
+      <h1 className="headingg">
         Partner with a Full-Service <br /> Design Team for All Your <br /> Creative Needs
       </h1>
 

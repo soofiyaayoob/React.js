@@ -3,6 +3,8 @@ import Navbar from './components/navbar/navbar';
 import './App.css';
 import Hero from './components/Hero-section/hero';
 import About from './components/About/about';
+import LogoCarousal from './components/LogoCarousal/LogoCarousal';
+
 function App() {
   return ( <>
     <div className="app">
@@ -10,6 +12,9 @@ function App() {
 <Navbar />
  <Hero />
  <About />
+ <LogoCarousal/>
+ <Hero />
+
     </div>
   </> );
 }
