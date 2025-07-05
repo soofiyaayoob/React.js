@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.hero .rating-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a1a1a;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.hero .rating-value {
+  color: #fff;
+}
+
+.hero .reviews {
+  color: #aaa;
+}
+
+.hero .heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 77.7px;
+  color: #fff;
+  margin: 0 auto 24px;
+}
+
+.hero .subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.2px;
+  color: #cfcfcf;
+  margin-bottom: 40px;
+}
+
+.hero .connect-button {
+  background-color: #facc15;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.2px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero .connect-icon {
+  width: 16px;
+  height: 17px;
+  vertical-align: middle;
+}

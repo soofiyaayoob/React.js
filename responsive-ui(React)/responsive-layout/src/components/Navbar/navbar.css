@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@400&display=swap');
+
+.navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.3px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #facc15; /* yellow */
+}
+
+.demo-button {
+  border: 2px solid #facc15;
+  color: #facc15;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.demo-button:hover {
+  background-color: #facc15;
+  color: #000;
+}
+.demo-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* ...your other styles */
+}
+
+.demo-icon {
+  width: 16px;
+  height: 16px;
+}
+.demo-button {
+  border: 2px solid #facc15;
+  color: #facc15;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  /* ✅ Font Styling as you requested */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.2px;
+  letter-spacing: 0;
+  vertical-align: middle;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.demo-button:hover {
+  background-color: #facc15;
+  color: #000;
+}
