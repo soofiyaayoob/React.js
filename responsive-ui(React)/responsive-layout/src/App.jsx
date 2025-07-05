@@ -4,7 +4,12 @@ import './App.css';
 import Hero from './components/Hero-section/hero';
 import About from './components/About/about';
 import LogoCarousal from './components/LogoCarousal/LogoCarousal';
-
+import WorkFlow from './components/WorkFlow/WorkFlow';
+import Portfolio from './components/portfolio/Portfolio';
+import Benefits from './components/Benefits/Benefits';
+import Services from './components/service/Services';
+import Pricing from './components/pricing/Pricing';
+Pricing
 function App() {
   return ( <>
     <div className="app">
@@ -13,8 +18,11 @@ function App() {
  <Hero />
  <About />
  <LogoCarousal/>
- <Hero />
-
+ <WorkFlow/>
+<Portfolio/>
+<Benefits/>
+<Services/>
+<Pricing/>
     </div>
   </> );
 }

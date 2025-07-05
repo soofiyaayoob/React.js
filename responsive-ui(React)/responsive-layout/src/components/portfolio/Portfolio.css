@@ -1,0 +1,290 @@
+
+.portfolio-section-container {
+  width: 1440px;
+  height: 1173.53px;
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  opacity: 1;
+  position: relative;
+  
+}
+
+
+.portfolio-header {
+  width: 1240px;
+  height: 181px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  opacity: 1;
+}
+
+.header-content {
+  width: 452px;
+  height: 181px;
+  display: flex;
+  flex-direction: column;
+  gap: 17.03px;
+  opacity: 1;
+}
+
+
+.badge-container {
+  width: 452px;
+  height: 43px;
+  opacity: 1;
+}
+
+
+.portfolio-badge {
+  display: inline-block;
+  width: 96px;
+  height: 43px;
+  background: #171802;
+  border: 1px solid #363804;
+  border-radius: 30px;
+  padding: 11px 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.3px;
+  color: #FFBE0D;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.portfolio-heading {
+  width: 452px;
+  height: 120.97px;
+  padding-bottom: 0.97px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 54px;
+  line-height: 59.94px;
+  color: #FFFFFF;
+  margin: 0;
+  opacity: 1;
+}
+
+
+.header-description {
+  width: 400px;
+  height: 70px;
+  max-width: 400px;
+  padding-right: 44.84px;
+  opacity: 1;
+}
+
+.header-description p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.2px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+
+.portfolio-content {
+  width: 1240px;
+  height: 938.53px;
+  opacity: 1;
+  position: relative;
+}
+
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 398.66px);
+  grid-template-rows: repeat(2, 398.67px);
+  gap: 22px;
+  margin-bottom: 54px;
+}
+
+
+.portfolio-item {
+  width: 398.66px;
+  height: 398.67px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 398.78px;
+  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  padding: 302.78px 40px 40px 40px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+
+.portfolio-title {
+  width: 319.04px;
+  height: 56px;
+  padding-right: 11.04px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27.94px;
+  color: #FFFFFF;
+  margin: 0;
+  opacity: 1;
+}
+
+
+.see-all-container {
+  width: 1239.98px;
+  height: 97.19px;
+  /* padding-top: 54px; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 1;
+}
+
+
+.see-all-button {
+  width: 171px;
+  height: 44px;
+  background: #FFBE0D;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.see-all-button:hover {
+  background: #e6a80c;
+  transform: translateY(-2px);
+}
+
+.see-all-button span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.2px;
+  color: #000000;
+}
+
+.see-all-button svg {
+  width: 16px;
+  height: 17px;
+  color: #000000;
+}
+
+/* Responsive design */
+@media (max-width: 1440px) {
+  .portfolio-section-container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  
+  .portfolio-header,
+  .portfolio-content {
+    width: 100%;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .portfolio-overlay {
+    height: 350px;
+    padding: 200px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-section-container {
+    padding: 0 20px;
+  }
+  
+  .portfolio-header {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+  
+  .header-content,
+  .header-description {
+    width: 100%;
+  }
+  
+  .portfolio-heading {
+    font-size: 36px;
+    line-height: 42px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .header-description {
+    padding-right: 0;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    height: 300px;
+  }
+  
+  .portfolio-overlay {
+    height: 300px;
+    padding: 150px 20px 20px 20px;
+  }
+  
+  .portfolio-title {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .see-all-container {
+    width: 100%;
+    padding-top: 30px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import connectus from "../../assets/connectus.svg";
+import connectus from "../../assets/ArrowIconBlack.svg";
 import ratingbox from "../../assets/ratingbox.svg";
 
 function Hero() {

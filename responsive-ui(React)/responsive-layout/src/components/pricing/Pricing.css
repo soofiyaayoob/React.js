@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+
+.pricing-wrapper {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  background-color: #000; /* or #141414 depending on surrounding section */
+}
+
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 177px;
+  gap: 18px;
+}
+
+.pricing-badge {
+  width: 86px;
+  height: 43px;
+  background: #171802;
+  border: 1px solid #363804;
+  border-radius: 30px;
+  padding: 11px 18px;
+  color: #FFBE0D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 54px;
+  line-height: 59.94px;
+  color: #313131;
+  text-align: center;
+  margin: 0;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-card {
+  background: #141414;
+  border: 1px solid #313131;
+  border-radius: 25px;
+  width: 398.66px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #FFFFFF;
+}
+
+.pricing-type {
+  color: #A6A6A6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 23.2px;
+}
+
+.pricing-price {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.pricing-period {
+  font-size: 22px;
+  margin-left: 8px;
+}
+
+.pricing-note {
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 1px;
+  font-size: 16px;
+}
+
+.pricing-includes {
+  padding-top: 37px;
+  background: #A6A6A6;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 7px;
+  list-style: none;
+}
+
+.pricing-features li {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.icon {
+  width: 16px;
+  height: 17px;
+  background: url('./check-icon.svg') no-repeat center;
+  background-size: contain;
+}
+
+.pricing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 37px;
+}
+
+.pricing-btn {
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-btn.filled {
+  background-color: #FFBE0D;
+  color: #000;
+  padding: 18px 0;
+  border: none;
+}
+
+.pricing-btn.outlined {
+  border: 1px solid #313131;
+  background: transparent;
+  color: #FFFFFF;
+  padding: 17px 0;
+}
+
+.pricing-project-card {
+  width: 398.66px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.project-info {
+  background: #141414;
+  border: 1px solid #313131;
+  border-radius: 25px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #FFFFFF;
+}
+
+.project-btn {
+  margin-top: 48px;
+  padding: 18px;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #313131;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.referral-box {
+  background: #141414;
+  border: 1px solid #313131;
+  border-radius: 25px;
+  padding: 35px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: space-between;
+}
+
+.referral-texts h3 {
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.referral-texts p {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.join-btn {
+  padding: 18px;
+  border-radius: 30px;
+  border: 1px solid #313131;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}

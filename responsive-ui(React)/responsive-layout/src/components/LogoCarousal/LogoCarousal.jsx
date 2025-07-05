@@ -11,22 +11,19 @@ function LogoCarousel() {
       <p className="seen-title">As seen and loved on:</p>
 
       <div className="carousel-wrapper">
-  <div className="carousel-track">
-    <img src={dribbble} alt="Dribbble" />
-    <img src={awwwards} alt="Awwwards" />
-    <img src={behance} alt="Behance" />
-    <img src={cssDesign} alt="CSS Design Awards" />
-    
+        <div className="carousel-track">
+          <img src={dribbble} alt="Dribbble" />
+          <img src={awwwards} alt="Awwwards" />
+          <img src={behance} alt="Behance" />
+          <img src={cssDesign} alt="CSS Design Awards" />
 
-    <img src={dribbble} alt="Dribbble" />
-    <img src={awwwards} alt="Awwwards" />
-    <img src={behance} alt="Behance" />
-    <img src={cssDesign} alt="CSS Design Awards" />
-  </div>
-   
-</div>
-<div className="Horizondal-divider"></div>
-
+          <img src={dribbble} alt="Dribbble" />
+          <img src={awwwards} alt="Awwwards" />
+          <img src={behance} alt="Behance" />
+          <img src={cssDesign} alt="CSS Design Awards" />
+        </div>
+      </div>
+      <div className="Horizondal-divider"></div>
     </section>
   );
 }
