@@ -12,9 +12,9 @@ const services2 = [
 function Services() {
   return (
     <div className="services-wrapper">
-      {/* Section heading */}
+      
       <div className="services-header">
-        <div className="services-badge">Services</div>
+        <div className="services-badge badge">Services</div>
         <h2 className="services-heading">All you want,<br />delivered on time</h2>
       </div>
 

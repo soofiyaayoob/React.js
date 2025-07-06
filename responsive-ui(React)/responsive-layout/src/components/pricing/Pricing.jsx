@@ -6,20 +6,20 @@ import arrowIcon from '../../assets/ArrowIconBlack.svg'; // optional, if using a
 function Pricing() {
   return (
     <section className="pricing-wrapper">
-      {/* Header */}
+      
       <div className="pricing-header">
-        <div className="pricing-badge">Pricing</div>
+        <div className="pricing-badge badge">Pricing</div>
         <h2 className="pricing-heading">
           Choose the relevant plan to build,<br />
           grow and fasten your team
         </h2>
       </div>
 
-      {/* Pricing Cards */}
+      
       <div className="pricing-cards">
 
-        {/* Card 1: Standard */}
-        <div className="pricing-card">
+      
+        <div className="pricing-card card">
           <div className="pricing-type">STANDARD</div>
           <div className="pricing-price">
             $150<span className="pricing-period">/month</span>
@@ -44,7 +44,7 @@ function Pricing() {
         </div>
 
         {/* Card 2: Standard (Duplicate) */}
-        <div className="pricing-card">
+        <div className="pricing-card card">
           <div className="pricing-type">STANDARD</div>
           <div className="pricing-price">
             $150<span className="pricing-period">/month</span>
@@ -69,7 +69,7 @@ function Pricing() {
         </div>
 
         {/* Card 3: Project-Based */}
-        <div className="pricing-project-card">
+        <div className="pricing-project-card card">
           <div className="project-info">
             <div className="pricing-type">PROJECT-BASED</div>
             <div className="pricing-desc">

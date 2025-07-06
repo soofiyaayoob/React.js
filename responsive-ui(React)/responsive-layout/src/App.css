@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 body {
@@ -28,4 +28,11 @@ body {
   background-position:
     top center,
     bottom center;
+    font-family: 'Montserrat';
+}
+.badge{
+  background: rgba(23, 24, 2, 1);
+  color:rgba(255, 190, 13, 1);
+  border: 1px solid rgba(54, 56, 4, 1);
+   border-radius: 30px;
 }

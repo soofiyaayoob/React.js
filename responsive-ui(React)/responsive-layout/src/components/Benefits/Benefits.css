@@ -30,20 +30,18 @@
 }
 
 .benefits-badge {
-  background: #171802;
-  border: 1px solid #363804;
-  border-radius: 30px;
+
+ 
+ 
   padding: 11px 18px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #FFBE0D;
+
   text-align: center;
 }
 
 
 .benefits-heading {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 54px;
   line-height: 59.94px;

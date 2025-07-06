@@ -25,26 +25,24 @@ justify-content: center;
 
 .works-badge {
 
-  padding-bottom: 18px;
+  /* padding-bottom: 18px; */
   margin-bottom: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+    border-radius: 30px;
 }
 
 .works-badge span {
   width: 135px;
-  height: 43px;
-  background: #171802;
-  border: 1px solid #363804;
-  border-radius: 30px;
+  /* height: 43px; */
+
   padding: 11px 18px;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 20.3px;
-  color: #FFBE0D;
   text-align: center;
   display: flex;
   align-items: center;

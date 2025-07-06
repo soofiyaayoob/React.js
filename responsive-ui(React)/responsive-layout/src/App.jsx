@@ -26,9 +26,9 @@ function App() {
 <Benefits/>
 <Services/>
 <Pricing/>
-
-<Testimonial/>
 <FaqSection/>
+<Testimonial/>
+
 <Footer/>
     </div>
   </> );

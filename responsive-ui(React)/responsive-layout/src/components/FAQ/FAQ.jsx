@@ -19,7 +19,7 @@ function FAQ() {
   return (
     <div className="faq-section-container">
       <div className="faq-header">
-        <div className="faq-badge">Insights</div>
+        <div className="faq-badge badge">Insights</div>
         <h2 className="faq-heading">Frequently asked questions</h2>
       </div>
       <div className="faq-list">
@@ -27,10 +27,7 @@ function FAQ() {
           <div key={index} className="faq-item">
             <div className="faq-question">
               <span className="faq-text">{question}</span>
-              <div className="faq-icon">
-                <div className="faq-bar horizontal"></div>
-                <div className="faq-bar vertical"></div>
-              </div>
+             <span className='icon'>+</span>
             </div>
           </div>
         ))}

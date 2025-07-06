@@ -1,5 +1,7 @@
 import React from 'react';
 import './portfolio.css';
+import ArrowIconBlack from '../../assets/ArrowIconBlack.svg';
+
 import project5 from '../../assets/project5.svg'; 
 import project1 from '../../assets/project1.svg'; 
 import project2 from '../../assets/project2.svg'; 
@@ -40,7 +42,7 @@ function Portfolio() {
       <div className="portfolio-header">
         <div className="header-content">
           <div className="badge-container">
-            <span className="portfolio-badge">Portfolio</span>
+            <span className="portfolio-badge badge">Portfolio</span>
           </div>
           <h2 className="portfolio-heading">
             Exceptional work<br />
@@ -74,15 +76,8 @@ function Portfolio() {
         <div className="see-all-container">
           <button className="see-all-button">
             <span>See all works</span>
-            <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M3.33333 8.5H12.6667M12.6667 8.5L8 3.83333M12.6667 8.5L8 13.1667"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+           <img src={ArrowIconBlack} alt="Arrow Icon" />
+
           </button>
         </div>
       </div>

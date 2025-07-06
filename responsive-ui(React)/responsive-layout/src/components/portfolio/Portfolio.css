@@ -42,15 +42,13 @@
   display: inline-block;
   width: 96px;
   height: 43px;
-  background: #171802;
-  border: 1px solid #363804;
+
   border-radius: 30px;
   padding: 11px 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 20.3px;
-  color: #FFBE0D;
   text-align: center;
   display: flex;
   align-items: center;
@@ -79,14 +77,15 @@
   max-width: 400px;
   padding-right: 44.84px;
   opacity: 1;
+  /* display: flex; */
+ align-self: flex-end;
 }
-
 .header-description p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
   line-height: 23.2px;
-  color: #FFFFFF;
+  color:rgba(255, 255, 255, 1);
   margin: 0;
 }
 
@@ -207,7 +206,7 @@
   color: #000000;
 }
 
-/* Responsive design */
+
 @media (max-width: 1440px) {
   .portfolio-section-container {
     width: 100%;

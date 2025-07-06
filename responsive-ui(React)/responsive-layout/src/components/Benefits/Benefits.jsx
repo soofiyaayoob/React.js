@@ -45,7 +45,7 @@ function Benefits() {
    
       <div className="benefits-header">
         <div className="benefits-badge-container">
-          <span className="benefits-badge">Benefits</span>
+          <span className="benefits-badge badge">Benefits</span>
         </div>
         <h2 className="benefits-heading">
           Unlock a world of design<br />

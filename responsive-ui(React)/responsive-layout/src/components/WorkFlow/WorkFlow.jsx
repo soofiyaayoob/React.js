@@ -23,7 +23,7 @@ function WorkFlow() {
   return (
     <div className="works-flow-container">
       <div className="content-section">
-        <div className="works-badge">
+        <div className="works-badge badge">
           <span>How it works?</span>
         </div>
         

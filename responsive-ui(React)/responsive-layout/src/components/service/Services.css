@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 
 .services-wrapper {
   max-width: 880px;
@@ -6,8 +6,9 @@
   padding: 0 100px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 54px;
   position: relative;
+
 }
 
 .services-header {
@@ -18,19 +19,21 @@
 }
 
 .services-badge {
-  width: 94px;
-  height: 43px;
-  background: #171802;
-  border: 1px solid #363804;
+  /* width: 94px;
+  height: 43px; */
+background: rgba(23, 24, 2, 1);
+
+  border: 1px solid rgba(54, 56, 4, 1);
   border-radius: 30px;
   padding: 11px 18px;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #FFBE0D;
+ 
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .services-heading {
@@ -44,42 +47,27 @@
 }
 
 .scroll-track-container {
+
   width: 680px;
   height: 45.19px;
   overflow: hidden;
   position: relative;
-  /* mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent); */
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+  /* background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%); */
+
+
+
 
 
 }
 
 .scroll-track-container.reverse {
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
   direction: rtl;
 }
 
-.scroll-track {
-  display: flex;
-  gap: 18px;
-  animation: scroll-left 10s linear infinite;
-}
 
-.scroll-track-container.reverse .scroll-track {
-  animation: scroll-right 10s linear infinite;
-}
-
-@keyframes scroll-left {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes scroll-right {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(50%); }
-}
 
 .service-tag {
   background: #141414;
