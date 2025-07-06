@@ -48,10 +48,16 @@
   height: 45.19px;
   overflow: hidden;
   position: relative;
-  mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+  /* mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent); */
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
+
 }
 
 .scroll-track-container.reverse {
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   direction: rtl;
 }
 

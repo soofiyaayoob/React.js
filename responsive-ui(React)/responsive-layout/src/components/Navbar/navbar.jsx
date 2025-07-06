@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css'; 
-import arrowIcon from "../../assets/ArrowIconBlack.svg"; 
+import arrowIcon from "../../assets/ArrowIconYellow.svg"; 
 
 function Navbar() {
   return (

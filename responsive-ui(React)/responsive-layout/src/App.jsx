@@ -9,6 +9,9 @@ import Portfolio from './components/portfolio/Portfolio';
 import Benefits from './components/Benefits/Benefits';
 import Services from './components/service/Services';
 import Pricing from './components/pricing/Pricing';
+import Testimonial from './components/Testmonials/Testimonial';
+import FaqSection from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
 Pricing
 function App() {
   return ( <>
@@ -23,6 +26,10 @@ function App() {
 <Benefits/>
 <Services/>
 <Pricing/>
+
+<Testimonial/>
+<FaqSection/>
+<Footer/>
     </div>
   </> );
 }
