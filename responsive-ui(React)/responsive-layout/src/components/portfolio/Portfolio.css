@@ -1,6 +1,6 @@
 
 .portfolio-section-container {
-  width: 1440px;
+  /* width: 1440px; */
   height: 1173.53px;
   padding: 30px 100px;
   display: flex;
@@ -8,7 +8,7 @@
   gap: 54px;
   opacity: 1;
   position: relative;
-  
+  margin: 0 auto;
 }
 
 

@@ -1,6 +1,6 @@
-import React from 'react';
-import './Testimonial.css';
-
+import React from "react";
+import "./Testimonial.css";
+import ratingbox from "../../assets/ratingbox.svg";
 const testimonials = [
   {
     name: "Milos Vidic",
@@ -62,34 +62,61 @@ function TestimonialSection() {
   return (
     <div className="testimonial-section-container">
       <div className="testimonial-header">
-        <div className="testimonial-badge">Testimonials</div>
+        <div className="testimonial-badge badge">Testimonials</div>
         <h2 className="testimonial-heading">
           Read what our clients are <br /> saying about us
         </h2>
       </div>
 
-      <div className="testimonial-scroll-container">
-        <div className="testimonial-grid">
-          {testimonials.map((item, index) => (
-            <div key={index} className="testimonial-card">
-              <div className="testimonial-user">
-                <div className="testimonial-avatar">
-                  <img src={item.image} alt={item.name} />
-                </div>
-                <div className="testimonial-info">
-                  <div className="testimonial-name">{item.name}</div>
-                  <div className="testimonial-role">{item.role}</div>
-                </div>
-              </div>
-              <p className="testimonial-review">{item.review}</p>
-              <div className="testimonial-rating">
-                <span>{item.source}</span>
-                <span>{item.rating.toFixed(1)} ⭐</span>
-              </div>
+   <div className="testimonial-scroll-container">
+  <div className="testimonial-grid-wrapper">
+    <div className="testimonial-grid">
+      {testimonials.map((item, index) => (
+        <div key={index} className="testimonial-card">
+          <div className="testimonial-user">
+            <div className="testimonial-avatar">
+              <img src={item.image} alt={item.name} />
             </div>
-          ))}
+            <div className="testimonial-info">
+              <div className="testimonial-name">{item.name}</div>
+              <div className="testimonial-role">{item.role}</div>
+            </div>
+          </div>
+          <p className="testimonial-review">{item.review}</p>
+          <div className="testimonial-rating">
+            <span className="rating-name">{item.source}</span>
+            <span>
+              {item.rating.toFixed(1)} <img src={ratingbox} alt="stars" />
+            </span>
+          </div>
         </div>
-      </div>
+      ))}
+
+    
+      {testimonials.map((item, index) => (
+        <div key={`copy-${index}`} className="testimonial-card">
+          <div className="testimonial-user">
+            <div className="testimonial-avatar">
+              <img src={item.image} alt={item.name} />
+            </div>
+            <div className="testimonial-info">
+              <div className="testimonial-name">{item.name}</div>
+              <div className="testimonial-role">{item.role}</div>
+            </div>
+          </div>
+          <p className="testimonial-review">{item.review}</p>
+          <div className="testimonial-rating">
+            <span className="rating-name">{item.source}</span>
+            <span>
+              {item.rating.toFixed(1)} <img src={ratingbox} alt="stars" />
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }

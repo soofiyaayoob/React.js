@@ -29,6 +29,8 @@ body {
     top center,
     bottom center;
     font-family: 'Montserrat';
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
 }
 .badge{
   background: rgba(23, 24, 2, 1);
