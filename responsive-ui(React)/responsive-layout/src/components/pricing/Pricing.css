@@ -1,7 +1,7 @@
 .pricing-wrapper {
   max-width: 1440px;
   padding: 0 100px;
-  margin: auto;
+  margin:0 ;
   display: flex;
   flex-direction: column;
   gap: 54px;
@@ -12,12 +12,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 177px;
+  padding: 0 10vw;
   gap: 18px;
 }
 
 .pricing-badge {
-  width: 86px;
+  width: fit-content;
   border-radius: 30px;
   padding: 11px 18px;
   font-size: 14px;
@@ -28,60 +28,53 @@
 }
 
 .pricing-heading {
-  font-family: 'Montserrat';
   font-weight: 200;
   font-size: 50px;
   line-height: 59.94px;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   text-align: center;
   margin: 0;
-  font-style: normal;
 }
 
 .pricing-cards {
-  box-sizing: border-box;
-  width: 1220px;
-  display: flex;
-  gap: 22px;
   flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 22px;
+  width: 100%;
+  box-sizing: border-box;
   justify-content: center;
-  flex-direction: row;
 }
-
 
 .pricing-card {
   border-radius: 25px;
-  border: 1px solid rgba(49, 49, 49, 1);
-  background: rgba(20, 20, 20, 1);
-  gap: 5px;
+  border: 1px solid #313131;
+  background: #141414;
   padding: 36px;
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 1);
+  gap: 5px;
+  color: white;
+  min-width: 0;
 }
 
 .pricing-type {
-  color: rgba(166, 166, 166, 1);
-
+  color: #a6a6a6;
   font-size: 16px;
   line-height: 23.2px;
   font-weight: 400;
-  font-style: normal;
 }
 
 .pricing-price {
   font-size: 48px;
   font-weight: 400;
-  font-style: normal;
   line-height: 69.6px;
 }
 
 .pricing-period {
   font-size: 22px;
   margin-left: 8px;
-  
   font-weight: 400;
-  font-style: normal;
   line-height: 27.94px;
 }
 
@@ -89,19 +82,16 @@
   padding-bottom: 1px;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
   line-height: 16px;
   text-decoration: underline;
 }
 
 .pricing-includes {
   padding-top: 37px;
- 
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 23.2px;
-  color: rgba(166, 166, 166, 1);
+  color: #a6a6a6;
 }
 
 .pricing-features {
@@ -118,11 +108,9 @@
   gap: 14px;
   align-items: center;
   font-size: 16px;
-
   font-weight: 400;
-  font-style: normal;
   line-height: 23.2px;
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 
 .icon {
@@ -139,7 +127,6 @@
 
 .pricing-btn {
   border-radius: 30px;
- 
   font-size: 16px;
   font-weight: 500;
   line-height: 23.2px;
@@ -150,47 +137,30 @@
 }
 
 .pricing-btn.filled {
-  background-color: rgba(255, 190, 13, 1);
-  color: rgba(0, 0, 0, 1);
-  padding: 18px 0;
+  background-color: #ffbe0d;
+  color: black;
   border: none;
-  width: 326.66px;
-  /* height: 58px; */
-  padding-top: 17px;
-  padding-right: 111.1px;
-  padding-bottom: 17px;
-  padding-left: 111.09px;
+  width: 100%; 
+  padding: 17px;
   gap: 8px;
-  border-radius: 30px;
- 
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 23.2px;
 }
 
 .pricing-btn.outlined {
-  border: 1px solid rgba(49, 49, 49, 1);
+  border: 1px solid #313131;
   background: transparent;
-  color: rgba(255, 255, 255, 1);
-  padding: 17px 0;
-
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 23.2px;
+  color: white;
+  padding: 17px;
 }
 
 .pricing-project-card {
   display: flex;
   flex-direction: column;
   gap: 22px;
-
   font-weight: 500;
-  font-style: normal;
   font-size: 16px;
   line-height: 23.2px;
-  color: rgba(255, 255, 255, 1);
+  color: white;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
 
 .project-info {
@@ -200,15 +170,12 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: #FFFFFF;
-  /* height: 413.5px; */
   padding: 36px;
 }
 
 .pricing-desc {
   font-family: Montserrat;
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 23.2px;
 }
@@ -219,10 +186,8 @@
   background: transparent;
   border: 1px solid #313131;
   font-size: 16px;
-  color: #FFFFFF;
+  color: white;
   font-weight: 500;
-  font-family: Montserrat;
-  font-style: normal;
   line-height: 23.2px;
 }
 
@@ -238,14 +203,11 @@
 }
 
 .referral-texts {
-  position: relative;
-  gap: 16.99px;
-  top: 0;
+  gap: 17px;
 }
 
 .referral-texts h3 {
   margin: 0;
-  top: 0;
   font-size: 36px;
   font-weight: 400;
 }
@@ -261,8 +223,184 @@
   background: transparent;
   font-size: 16px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   font-family: Montserrat;
-  font-style: normal;
   line-height: 23.2px;
+}
+
+
+.pricing-card,
+.pricing-project-card {
+  flex: 0 0 355px;
+  scroll-snap-align: start;
+  position: relative;
+}
+.badge-top-right {
+  position: absolute;
+  top: 0px;
+  right: 18px;
+  background: rgba(243, 255, 17, 0.14);
+
+  color: rgba(255, 190, 13, 1);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.badge-top-right img {
+  width: 15px;
+  height: 23.2px;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* @media (max-width: 804px) {
+  .pricing-project-card {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .project-info,
+  .referral-box {
+    flex: 1 1 50%; 
+  }
+} */
+
+@media (max-width:1400px) {
+    .pricing-wrapper {
+    padding: 0 50px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+
+.pricing-wrapper {
+    padding: 0 100px;
+    gap: 32px;
+  }
+   .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing-heading {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+
+  .pricing-badge {
+    font-size: 13px;
+  }
+
+  .pricing-cards {
+    gap: 18px;
+  }
+
+  .pricing-price {
+    font-size: 40px;
+  }
+
+  .pricing-period {
+    font-size: 20px;
+  }
+
+  .pricing-features li {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .pricing-wrapper {
+    padding: 0 50px;
+    gap: 32px;
+  }
+  /* .pricing-wrapper {
+    padding: 0 20px;
+    gap: 32px;
+  } */
+
+  .pricing-heading {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .pricing-badge {
+    font-size: 12px;
+    padding: 9px 16px;
+  }
+
+  .pricing-price {
+    font-size: 34px;
+  }
+
+  .pricing-period {
+    font-size: 18px;
+  }
+
+  .pricing-features li {
+    font-size: 14px;
+  }
+
+  .pricing-btn {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .project-info,
+  .referral-box {
+    padding: 24px;
+  }
+
+  .referral-texts h3 {
+    font-size: 28px;
+  }
+
+  .referral-texts p {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing-wrapper {
+    padding: 0 10px;
+    gap: 32px;
+  }
+  .pricing-heading {
+    font-size: 30px;
+  }
+
+  .pricing-price {
+    font-size: 28px;
+  }
+
+  .pricing-period {
+    font-size: 16px;
+  }
+
+  .pricing-features li {
+    font-size: 13px;
+  }
+
+  .pricing-btn {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .referral-texts h3 {
+    font-size: 24px;
+  }
+
+  .referral-texts p {
+    font-size: 13px;
+  }
 }

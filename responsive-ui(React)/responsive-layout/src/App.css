@@ -31,10 +31,43 @@ body {
     font-family: 'Montserrat';
     color: rgba(255, 255, 255, 1);
     margin: 0 auto;
+    width: 100%;
+    scroll-behavior: smooth;
 }
 .badge{
   background: rgba(23, 24, 2, 1);
   color:rgba(255, 190, 13, 1);
   border: 1px solid rgba(54, 56, 4, 1);
    border-radius: 30px;
+}
+
+
+@media (max-width: 774px) {
+  .app {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 440px) {
+  .app {
+    gap: 50px;
+  }
+  .body{
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 377px) {
+  .app {
+    gap: 25px;
+  }
+  .body{
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 313px) {
+  .app {
+    gap: 20px;
+  }
 }

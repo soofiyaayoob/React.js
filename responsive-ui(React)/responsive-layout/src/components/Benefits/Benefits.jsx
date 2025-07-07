@@ -41,7 +41,7 @@ function Benefits() {
   ];
 
   return (
-    <div className="benefits-section-container">
+    <div className="benefits-section-container" id="benefits">
    
       <div className="benefits-header">
         <div className="benefits-badge-container">

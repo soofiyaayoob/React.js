@@ -17,7 +17,7 @@ const faqs = [
 
 function FAQ() {
   return (
-    <div className="faq-section-container">
+    <div className="faq-section-container " id="faq">
       <div className="faq-header">
         <div className="faq-badge badge">Insights</div>
         <h2 className="faq-heading">Frequently asked questions</h2>

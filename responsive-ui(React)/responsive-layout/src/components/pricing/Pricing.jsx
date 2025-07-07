@@ -1,11 +1,11 @@
 import React from 'react';
 import './Pricing.css';
-import tick from '../../assets/tick.svg'; // adjust path based on your file structure
-import arrowIcon from '../../assets/ArrowIconBlack.svg'; // optional, if using an arrow icon
-
+import tick from '../../assets/tick.svg'; 
+import arrowIcon from '../../assets/ArrowIconBlack.svg'; 
+import Faster from '../../assets/faster.svg';
 function Pricing() {
   return (
-    <section className="pricing-wrapper">
+    <section className="pricing-wrapper"  id='pricing'>
       
       <div className="pricing-header">
         <div className="pricing-badge badge">Pricing</div>
@@ -43,8 +43,9 @@ function Pricing() {
           </div>
         </div>
 
-        {/* Card 2: Standard (Duplicate) */}
+        
         <div className="pricing-card card">
+          <div className="badge-top-right">Faster <img src={Faster} alt="" /></div> 
           <div className="pricing-type">STANDARD</div>
           <div className="pricing-price">
             $150<span className="pricing-period">/month</span>
@@ -68,7 +69,7 @@ function Pricing() {
           </div>
         </div>
 
-        {/* Card 3: Project-Based */}
+       
         <div className="pricing-project-card card">
           <div className="project-info">
             <div className="pricing-type">PROJECT-BASED</div>

@@ -5,7 +5,7 @@ import ratingbox from "../../assets/ratingbox.svg";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="rating-box">
         <span className="rating-value">5.0</span>
         <img src={ratingbox} alt="stars" />

@@ -37,7 +37,7 @@ function Portfolio() {
   ];
 
   return (
-    <div className="portfolio-section-container">
+    <div className="portfolio-section-container" id='portfolio'>
       
       <div className="portfolio-header">
         <div className="header-content">

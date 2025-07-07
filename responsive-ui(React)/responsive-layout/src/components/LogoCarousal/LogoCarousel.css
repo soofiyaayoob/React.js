@@ -1,6 +1,6 @@
-
 .seen-on-section {
-  width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
   font-family: 'Montserrat';
   display: flex;
@@ -15,40 +15,42 @@
     rgba(255, 255, 255, 0.25) 0%, 
     rgba(255, 255, 255, 0) 62%
   );
-  /* padding-bottom: 60px; */
+  padding: 0 20px;
 }
-
 
 .seen-title {
   font-size: 16px;
   color: #aaa;
   font-weight: 400;
-  padding: 0 533.85px;
+  max-width: 100%;
+  padding: 0 10vw; 
+  box-sizing: border-box;
 }
 
-
 .carousel-wrapper {
-  width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px; 
+  height: 60px;
+  padding: 0 20px; 
+  box-sizing: border-box;
 }
-
 
 .carousel-track {
   display: flex;
-  gap: 104px;
+  gap: 8vw; 
   width: max-content;
   animation: scrollLoop 8s linear infinite;
 }
 
 .carousel-track img {
-  width: 121px;
-  height: 33px;
+  width: clamp(70px, 10vw, 121px); 
+  height: auto;
   object-fit: contain;
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -57,7 +59,6 @@
 .carousel-track img:hover {
   opacity: 1;
 }
-
 
 @keyframes scrollLoop {
   0% {
@@ -68,13 +69,87 @@
   }
 }
 
-
 .Horizondal-divider {
-  width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   height: 1px;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(255, 255, 255, 0.44) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 774px) {
+  .seen-on-section {
+    gap: 40px;
+  }
+
+  .carousel-track {
+    gap: 6vw;
+  }
+
+  .carousel-track img {
+    width: clamp(60px, 9vw, 100px);
+  }
+
+  .seen-title {
+    font-size: 15px;
+    padding: 0 8vw;
+  }
+}
+
+@media (max-width: 440px) {
+  .seen-on-section {
+    gap: 30px;
+  }
+
+  .carousel-track {
+    gap: 5vw;
+  }
+
+  .carousel-track img {
+    width: clamp(50px, 8vw, 90px);
+  }
+
+  .seen-title {
+    font-size: 14px;
+    padding: 0 6vw;
+  }
+}
+
+@media (max-width: 377px) {
+  .carousel-track {
+    gap: 4vw;
+  }
+
+  .carousel-track img {
+    width: clamp(45px, 7vw, 80px);
+  }
+
+  .seen-title {
+    font-size: 13px;
+    padding: 0 5vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-track {
+    gap: 3vw;
+  }
+  .seen-on-section{
+    padding: 0 0;
+  }
+
+  .carousel-track img {
+    width: clamp(40px, 6vw, 70px);
+  }
+
+  .seen-title {
+   
+    padding: 0 4vw;
+  }
 }

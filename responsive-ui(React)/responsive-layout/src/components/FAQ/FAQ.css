@@ -1,53 +1,53 @@
 .faq-section-container {
-  width: 880px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 880px; 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 54px;
-  padding: 0 100px;
+  padding: 0 5vw; 
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .faq-badge {
   width: fit-content;
-  margin: 0 auto; /* centers the badge */
+  margin: 0 auto;
   border-radius: 30px;
- padding: 11px 18px;
+  padding: 11px 18px;
   font-size: 14px;
   font-weight: 400;
-
-  
   text-align: center;
 }
 
 .faq-header {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   text-align: center;
   gap: 12px;
+  width: 100%;
 }
 
 .faq-heading {
-  display: flex;
-  max-width: 450px;
   font-weight: 200;
-  font-size: 54px;
-  line-height: 59.94px;
-  color: rgba(255, 255, 255, 1);
+  font-size: 3.2rem;
+  line-height: 1.1;
+  color: white;
   text-align: center;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .faq-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .faq-item {
-  width: 880px;
+  width: 100%;
   padding: 21px 23px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 17px;
@@ -55,6 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .faq-question {
@@ -66,11 +67,10 @@
 }
 
 .faq-text {
-  
   font-size: 20px;
   font-weight: 400;
   line-height: 29px;
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 
 .icon {
@@ -81,7 +81,73 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  font-weight: 400;
-  line-height: 29px;
+
+
+
+@media (max-width: 830px) {
+  .faq-section-container {
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .faq-heading {
+    font-size: 2.6rem;
+  }
+
+  .faq-text {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 22px;
+    width: 28px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section-container {
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .faq-heading {
+    font-size: 2.2rem;
+  }
+
+  .faq-text {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 20px;
+    width: 26px;
+    height: 20px;
+  }
+
+  .faq-item {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .faq-heading {
+    font-size: 1.9rem;
+  }
+
+  .faq-text {
+    font-size: 15px;
+  }
+
+  .icon {
+    font-size: 18px;
+    width: 24px;
+    height: 18px;
+  }
+
+  .faq-item {
+    padding: 16px 18px;
+  }
 }

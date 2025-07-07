@@ -3,12 +3,14 @@
 width: 100%;
 align-items: center;
 justify-content: center;
-  /* padding: 0 100px; */
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   gap: 54px;
   opacity: 1;
   position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 
@@ -52,7 +54,7 @@ justify-content: center;
 
 .main-heading {
   width: 519px;
-  height: 120.97px;
+  /* height: 120.97px; */
   padding-bottom: 0.97px;
   margin-bottom: 20px;
   font-family: 'Montserrat';
@@ -66,7 +68,7 @@ justify-content: center;
 
 
 .description {
-  width: 600px;
+  /* width: 600px; */
   /* height: 57px; */
   max-width: 600px;
   padding: 10px 39px 0;
@@ -81,19 +83,20 @@ justify-content: center;
 
 
 .works-container {
-  width: 1240px;
-  height: 209.31px;
+  /* width: 1240px; */
+  /* height: 209.31px; */
   padding-right: 0.01px;
   display: flex;
   gap: 22px;
   border-radius: 25px;
   opacity: 1;
+  flex-wrap: nowrap;
 }
 
 
 .work-card {
-  min-width: 398.66px;
-  min-height: 209px;
+  /* min-width: 398.66px;
+  min-height: 209px; */
   background: #141414;
   border: 1px solid #313131;
   border-radius: 25px;
@@ -128,7 +131,7 @@ justify-content: center;
 
 
 .work-title {
-  width: 340.66px;
+  /* width: 340.66px; */
   /* height: 27.94px; */
   /* max-height: 27.94px; */
   font-family: 'Montserrat';
@@ -140,7 +143,7 @@ justify-content: center;
 }
 
 .work-description {
-  width: 340.66px;
+  /* width: 340.66px; */
   /* height: 47px; */
   font-family: 'Montserrat';
   font-weight: 400;
@@ -150,50 +153,51 @@ justify-content: center;
   margin: 0;
 }
 
-
-@media (max-width: 1440px) {
-  .pay-get-started-container {
-    width: 100%;
-    padding: 0 50px;
+@media (max-width: 830px) {
+.works-flow-container{
+  padding: 0 50px;
+}
+}
+@media (max-width: 760px) {
+  .work-number{
+    padding: 6px 10px;
   }
-  
-  .content-section,
-  .steps-container {
-    width: 100%;
+  .work-title{
+    font-size: 18px;
   }
-  
-  .steps-container {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .step-card {
-    flex: 1;
-    min-width: 300px;
+  .work-description{
+    font-size: 14px;
   }
 }
+@media (max-width: 600px) {
+   .work-number{
+    padding: 10px 20px;
+  }
+  .work-title{
+    font-size: 24px;
+  }
+  .work-description{
+    font-size: 16px;
+  }
 
-@media (max-width: 768px) {
-  .pay-get-started-container {
-    padding: 0 20px;
+  .works-flow-container{
+    padding: 0 10px;
   }
-  
-  .main-heading {
-    font-size: 36px;
-    line-height: 42px;
-    width: 100%;
+  .description{
+    font-weight: 250px;
+    font-size: 12px;
+  }.main-heading{
+    font-size: 45px;
   }
-  
-  .description {
-    width: 100%;
-    padding: 10px 20px 0;
-  }
-  
-  .steps-container {
+  .works-container{
     flex-direction: column;
   }
-  
-  .step-card {
-    width: 100%;
+    .main-heading{
+    height: auto;
+    width: auto;
+  }
+  .description{
+    width: auto;
+    height: auto;
   }
 }

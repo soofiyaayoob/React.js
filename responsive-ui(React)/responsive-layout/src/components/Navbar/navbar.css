@@ -1,88 +1,205 @@
-
-
+/* ========== General Navbar Styles ========== */
 .navbar {
-
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
+  padding: 32px 5vw;
+  position: relative;
 }
 
 .logo {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0;
-  vertical-align: middle;
+  font-size: clamp(28px, 5vw, 40px);
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   gap: 24px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
   font-family: 'Montserrat';
-  font-weight: 400;
   font-size: 14px;
-  line-height: 20.3px;
-  letter-spacing: 0;
-  vertical-align: middle;
   cursor: pointer;
-  transition: color 0.3s;
+  white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
+.demo-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #FFBE0D;
+  background: transparent;
+  color: white;
+  padding: 10px 21px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 .demo-icon {
   width: 16px;
   height: 16px;
 }
-.demo-button {
-  display: flex;
-  align-items: center;
-  border: 1px solid #FFBE0D;
-  color: #FFFFFF;
-  background: transparent;
+
+/* ========== Hamburger Button ========== */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
   cursor: pointer;
-  /* transition: all 0.3s; */
+  position: absolute;
+  top: 16px;
+  right: 0;
+  padding: 8px;
+  display: none;
+}
 
-  
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 23.2px;
-  letter-spacing: 0;
-  vertical-align: middle;
+/* ========== Sidebar ========== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background: #000;
+  padding: 40px 30px;
+  border-radius: 30px 0 0 30px;
+  z-index: 1000;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  gap: 32px;
+}
+
+.sidebar.active {
+  transform: translateX(0%);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ========== Sidebar Close Button ========== */
+.sidebar-close {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+}
+
+.sidebar-close svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ========== Sidebar Link Styles ========== */
+.sidebar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-links li {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(49, 49, 49, 1);
+  border-radius: 30px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* ========== Sidebar Demo Button (separated) ========== */
+.demo-button-sidebar {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFBE0D;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  background: transparent;
+  color: white;
   gap: 8px;
-border-radius: 30px;
-
-  width: 177.67379760742188;
-height: 44;
-
-top: 63px;
-left: 1207.33px;
-
-
-padding-top: 10px;
-padding-right: 21px;
-padding-bottom: 10px;
-padding-left: 21px;
-
-
-
-
-
+  box-sizing: border-box;
 }
 
-
+/* ========== Hover Effects for All li ========== */
+.nav-links li:hover,
+.sidebar-links li:hover,
 .demo-button:hover,
-.nav-links li:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+.demo-button-sidebar:hover {
+  transform: translateY(2px);
+  color: rgba(255, 190, 13, 1);
+   transition: all 0.3s ease;
 }
+/* ========== Responsive Rules ========== */
+@media (max-width: 900px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+
+
+.nav-links li a.active,
+.sidebar-links li a.active {
+  color: yellow;
+  font-weight: bold;
+  transform: translateY(2px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

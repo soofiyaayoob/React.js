@@ -27,10 +27,10 @@ function About() {
         </div>
       </div>
 
-      {/* BOTTOM BLOCK */}
+     
       <div className="about-bottom">
         <div className="about-title">
-          Your dedicated<br />in-house design<br />team
+          Your dedicatedin-house design team
         </div>
 
         <div className="about-description">
